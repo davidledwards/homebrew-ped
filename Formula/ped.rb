@@ -6,10 +6,10 @@ class Ped < Formula
   if OS.linux? || OS.mac?
     if Hardware::CPU.intel?
       url "https://github.com/davidledwards/ped/releases/download/v" + version + "/ped-" + version + "-x86_64-unix.tar.gz"
-      sha256 "2832ff14d4b3192548782dc6e35c275bffe108432c85562ba14abfd648019551"
+      sha256 "c5bb84f4a2a00b9e8146964d253a124280a526d1364681554c05c034957efac6"
     elsif Hardware::CPU::arm?
       url "https://github.com/davidledwards/ped/releases/download/v" + version + "/ped-" + version + "-aarch64-unix.tar.gz"
-      sha256 "5c7f02e4b9d205ff483b9555bdb493b1d6bfd9e9795d9a91041d7da2a20abc89"
+      sha256 "a45e46354b4bb50f1e43c1efbb5a62ed4c241dc839a957fcb56e8e3c7a61e97d"
     end
   end
 
