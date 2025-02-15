@@ -1,15 +1,15 @@
 class Ped < Formula
   desc "The pedestrian text editor"
   homepage "https://github.com/davidledwards/ped"
-  version "0.19.1"
+  version "0.20.0"
 
   if OS.linux? || OS.mac?
     if Hardware::CPU.intel?
       url "https://github.com/davidledwards/ped/releases/download/v" + version + "/ped-" + version + "-x86_64-unix.tar.gz"
-      sha256 "678e73d6ccff34e95d40f4002210b54b5a26f795f36a6e5bb3c36365c865320b"
+      sha256 "3aa27c2a50e206f9f39ebe1345974d73164e8ca3284907e0c0629ad25cb4510f"
     elsif Hardware::CPU::arm?
       url "https://github.com/davidledwards/ped/releases/download/v" + version + "/ped-" + version + "-aarch64-unix.tar.gz"
-      sha256 "b6e63c160c49e826b4e6611996fc373eb2e607a46eb055c2a4d8af78f6cdb06e"
+      sha256 "e671cf93584e746769d15b2bce2724303de3b463c0df0e7199b2517521cef967"
     end
   end
 
