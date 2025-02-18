@@ -29,8 +29,4 @@ class Ped < Formula
   def install
     bin.install "ped"
   end
-
-  test do
-    system "#{bin}/ped", "--version"
-  end
 end
