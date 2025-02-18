@@ -21,9 +21,6 @@ class Ped < Formula
       url "#{url_prefix}-x86_64-unknown-linux-gnu.tar.gz"
       sha256 "623a73b94f5b2a6a306653eae730820abe730d37b30b14e1b7e2b6246b26f57e"
     end
-
-    on_arm do
-    end
   end
 
   def install
