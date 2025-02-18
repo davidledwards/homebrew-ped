@@ -7,19 +7,24 @@ class Ped < Formula
   on_macos do
     on_intel do
       url "#{url_prefix}-x86_64-apple-darwin.tar.gz"
-      sha256 "a0b728e52c7304d19ae6e5d9114eea91033e9172bc3e2460c324f4d26dcef67d"
+      sha256 "51925e9dd83fab8d666a41979de30a2dd9223d063584c14058d5eaab354365f1"
     end
 
     on_arm do
       url "#{url_prefix}-aarch64-apple-darwin.tar.gz"
-      sha256 "1d46ce48558e03f532d8bab5ce0343de42b3ad8c082ed8dc953740d7176cf128"
+      sha256 "b51760d047b8efa2e2f5e726eadeb3e5db34806c4c9062a4357269e9bc2ce0d5"
     end
   end
 
   on_linux do
     on_intel do
-      url "#{url_prefix}-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "9fc23f43229be8a6097348efbfc7778704f79d2e10d6bb4b8a946a8e5a1861be"
+      if Hardware::CPU.is_64_bit?
+        url "#{url_prefix}-x86_64-unknown-linux-gnu.tar.gz"
+        sha256 "38ef2487b535d96918a5ba3acfb415f262cc2ebc939ee19f6eda5f9af81d72fc"
+      else
+        url "#{url_prefix}-i686-unknown-linux-gnu.tar.gz"
+        sha256 "f199bd733d26b3d8c982ba69d29c2ba669ba6cf7d10eb6aa0574bd393a75ab49"
+      end
     end
   end
 
