@@ -1,7 +1,7 @@
 class Ped < Formula
   desc "The pedestrian text editor"
   homepage "https://github.com/davidledwards/ped"
-  version "0.29.0"
+  version "4.5.6"
   url_prefix = "https://github.com/davidledwards/ped/releases/download/v#{version}/ped-#{version}"
 
   on_macos do
