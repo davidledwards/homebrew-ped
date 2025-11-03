@@ -1,17 +1,17 @@
 class Ped < Formula
   desc "The pedestrian text editor"
   homepage "https://github.com/davidledwards/ped"
-  version "0.32.0"
+  version "0.33.0"
   url_prefix = "https://github.com/davidledwards/ped/releases/download/v#{version}/ped-#{version}"
 
   on_macos do
     on_arm do
       url "#{url_prefix}-aarch64-apple-darwin.tar.gz"
-      sha256 "09e492f589e7728d81536527a20e4a1bdc609c21ba9c1b27342d69ecd059582f" # aarch64-apple-darwin
+      sha256 "eb7f0e1cfb12218ea21f1250265ee0ccefea70367a3becbddcfc54269235a3c3" # aarch64-apple-darwin
     end
     on_intel do
       url "#{url_prefix}-x86_64-apple-darwin.tar.gz"
-      sha256 "aad0b24af34d38caa6d5f9e47e14c05dba9460f34685733fb1d5081748b962dc" # x86_64-apple-darwin
+      sha256 "336378db034a136518d630f8aad22ac395f137773573596f17f2bcf7f7ff2d25" # x86_64-apple-darwin
     end
   end
 
@@ -19,10 +19,10 @@ class Ped < Formula
     on_intel do
       if Hardware::CPU.is_64_bit?
         url "#{url_prefix}-x86_64-unknown-linux-gnu.tar.gz"
-        sha256 "e719c32545c50f4ec9a678a305588d29891e8e037ff86e54ee2e3c15d3e1bd9f" # x86_64-unknown-linux-gnu
+        sha256 "70aa948ff6dc004e2d1af05762128c4cee19888fecca2903af50b0168c98e7db" # x86_64-unknown-linux-gnu
       else
         url "#{url_prefix}-i686-unknown-linux-gnu.tar.gz"
-        sha256 "113fb7887865b20a96d8267a3956b26d1a61ab9aad26e128ed68f832938fbe83" # i686-unknown-linux-gnu
+        sha256 "73461e9e2e5dd11966fd1290e55b024ff6aa62588244f925a5480b4bfb493fbf" # i686-unknown-linux-gnu
       end
     end
   end
